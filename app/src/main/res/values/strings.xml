@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Prospects</string>
+
+    <string-array name="prefix">
+        <item>--กรุณาเลือก--</item>
+        <item>นาย</item>
+        <item>นาง</item>
+        <item>นางสาว</item>
+    </string-array>
+
+    <string-array name="campaign">
+        <item>--กรุณาเลือก--</item>
+    </string-array>
+</resources>
