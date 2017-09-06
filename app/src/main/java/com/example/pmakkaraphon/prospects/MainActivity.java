@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+
 public class MainActivity extends AppCompatActivity {
 
     Button mSubmit;
@@ -13,13 +15,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+                .setDefaultFontPath("fonts/LayijiMahaniyom-Bao-1.2.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build());
         setContentView(R.layout.activity_main);
 
-        mSubmit = (Button) findViewById(R.id.btnNextS1);
+        mSubmit = (Button) findViewById(R.id.btnLogin);
         mSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ProfileS1Activity.class);
+                Intent intent = new Intent(MainActivity.this, ProfileS1Activity.class);
                 startActivity(intent);
             }
         });

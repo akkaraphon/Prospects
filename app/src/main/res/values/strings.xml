@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Prospects</string>
+    <string name="app_name">บันทึกข้อมูล และ ติดตาม ลูกค้า</string>
 
     <string-array name="prefix">
         <item>--กรุณาเลือก--</item>
